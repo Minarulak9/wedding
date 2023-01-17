@@ -12,3 +12,10 @@ setInterval(() => {
     one = 1;
   }
 }, 6000);
+
+// nav toggler
+const navToggle = document.querySelector(".toggler");
+const links = document.querySelector(".nav .links");
+navToggle.addEventListener("click", () => {
+  links.classList.toggle("active");
+});

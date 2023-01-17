@@ -15,6 +15,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./src/slider.css">
 </head>
 
 <body>
@@ -22,7 +23,7 @@
         <div class="top-nav">
             <ul class="links">
                 <li><a href="tel:9989899889"><i class="fa-solid fa-phone-volume"></i> 9989899889</a></li>
-                <li><a href="mailto:example@gmail.com"><i class="fa-solid fa-envelope"></i> example@gmail.com</a></li>
+                <li class="d-none d-sm-block"><a href="mailto:example@gmail.com"><i class="fa-solid fa-envelope"></i> example@gmail.com</a></li>
             </ul>
             <div class="language-change">
                 <div class="lang-box">
@@ -44,6 +45,7 @@
                 <li class="link"><a href="#">Product</a></li>
                 <li class="link"><a href="#">Wedding Planning</a></li>
             </ul>
+            <div class="toggler"><i class="fa-solid fa-bars"></i></div>
         </nav>
         <div class="header-img">
             <div class="bg img1">
@@ -65,7 +67,7 @@
         </div>
         <div class="container product_container d-flex">
             <div class="product">
-                <img src="./img/cam.jpg" alt="">
+                <!-- <img src="./img/cam.jpg" alt=""> -->
                 <h2 class="heading">Photography</h2>
                 <div class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, a?</div>
                 <div class="btns">
@@ -74,7 +76,7 @@
                 </div>
             </div>
             <div class="product">
-                <img src="./img/meakup.jpg" alt="">
+                <!-- <img src="./img/meakup.jpg" alt=""> -->
                 <h2 class="heading">Makeup</h2>
                 <div class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, a?</div>
                 <div class="btns">
@@ -83,7 +85,7 @@
                 </div>
             </div>
             <div class="product">
-                <img src="./img/piano.jpg" alt="">
+                <!-- <img src="./img/piano.jpg" alt=""> -->
                 <h2 class="heading">Music party</h2>
                 <div class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, a?</div>
                 <div class="btns">
@@ -97,7 +99,7 @@
         </div>
         <div class="container product_container d-flex">
             <div class="product">
-                <img src="./img/cam.jpg" alt="">
+                <!-- <img src="./img/cam.jpg" alt=""> -->
                 <h2 class="heading">Photography</h2>
                 <div class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, a?</div>
                 <div class="btns">
@@ -106,7 +108,7 @@
                 </div>
             </div>
             <div class="product">
-                <img src="./img/meakup.jpg" alt="">
+                <!-- <img src="./img/meakup.jpg" alt=""> -->
                 <h2 class="heading">Makeup</h2>
                 <div class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, a?</div>
                 <div class="btns">
@@ -115,7 +117,7 @@
                 </div>
             </div>
             <div class="product">
-                <img src="./img/piano.jpg" alt="">
+                <!-- <img src="./img/piano.jpg" alt=""> -->
                 <h2 class="heading">Music party</h2>
                 <div class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, a?</div>
                 <div class="btns">
@@ -125,6 +127,62 @@
             </div>
         </div>
 
+    </section>
+    <section id="product_completed" class="pt-5 pb-5 position-relative">
+        <div class="product_completed_heading">
+            <h1 class="heading font3">Completed Product</h1>
+        </div>
+        <div class="wedding_container">
+            <section class="section-testimonials">
+                <div class="slider">
+                  <div class="slider__slides">
+                    <div class="slider__slide slider__slide--1">
+                      <figure class="testimonial slider__slide-content">
+                        <blockquote class="testimonial__text">
+                          <img class="testimonial__quotation-marks" src="img/pattern-quotes.svg" alt="quotation marks">
+                          <p class="testimonial__quote">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto nulla possimus asperiores voluptas quam necessitatibus sit laborum ad dicta aspernatur veritatis sequi hic ratione dolorum quibusdam voluptatum error, voluptatem impedit.
+                          </p>
+                        </blockquote>
+                        <div class="testimonial__img">
+                            <a href="#">
+                                <img class="testimonial__photo" src="img/header_bg2.jpg" alt="Tanya Sinclair">
+                            </a>
+                        </div>
+                      </figure>
+                    </div>
+            
+                    <div class="slider__slide slider__slide--2">
+                      <figure class="testimonial slider__slide-content">
+                        <blockquote class="testimonial__text">
+                          <img class="testimonial__quotation-marks" src="img/pattern-quotes.svg" alt="quotation marks">
+                          <p class="testimonial__quote">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quasi dolorem velit sunt, nam qui facere odit dolor accusamus quo consequuntur similique modi sequi unde magnam ad tenetur vel reiciendis illo nesciunt voluptas? Ipsa placeat .
+                          </p>
+                        </blockquote>
+                        <div class="testimonial__img">
+                            <a href="#">
+                                <img class="testimonial__photo" src="img/header_bg1.jpg" alt="John Tarkpor">
+                            </a>
+                        </div>
+                      </figure>
+                    </div>
+                  </div>
+            
+                  <div class="slider__buttons">
+                    <div class="slider__button slider__button--prev">
+                      <svg class="slider__button-icon" xmlns="http://www.w3.org/2000/svg" width="12" height="18">
+                        <path fill="none" stroke-width="3" d="M11 1L3 9l8 8" /></svg>
+                    </div>
+                    <div class="slider__button slider__button--next">
+                      <svg class="slider__button-icon" xmlns="http://www.w3.org/2000/svg" width="13" height="18">
+                        <path fill="none" stroke-width="3" d="M2 1l8 8-8 8" /></svg>
+                    </div>
+                  </div>
+                </div>
+              </section>    
+        </div>
+        
     </section>
     <section id="wedding" class="pt-5 pb-5">
         <div class="wedding_heading">
@@ -138,8 +196,71 @@
         </div>
         
     </section>
-    <footer>
-        
+    
+      <footer class="footer-section">
+        <div class="container">
+            <div class="footer-content pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-logo">
+                                <a href="index.html"><img src="./img/logo_transparent.png" class="img-fluid" alt="logo"></a>
+                            </div>
+                            <div class="footer-text">
+                                <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing
+                                elit,Lorem ipsum dolor sit amet.</p>
+                            </div>
+                            <div class="footer-social-icon">
+                                <span>Follow us</span>
+                                <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                                <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                                <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Useful Links</h3>
+                            </div>
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Products</a></li>
+                                <li><a href="#">Contact us</a></li>
+                                <li><a href="#">Blog</a></li>
+                            </ul>
+                        </div>
+                        <br>
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Subscribe</h3>
+                            </div>
+                            <div class="footer-text mb-25">
+                                <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                            </div>
+                            <div class="subscribe-form">
+                                <form action="#">
+                                    <input type="text" placeholder="Email Address">
+                                    <button><i class="fab fa-telegram-plane"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-area">
+            <div class="container">
+                <div class="row">
+                    <div class="text-center">
+                        <div class="copyright-text">
+                            <p>Copyright &copy; 2023, All Right Reserved <a href="#">Wedding</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
 
 
@@ -161,6 +282,7 @@
 
         });
     </script>
+    <script src="./src/slider.js"></script>
 </body>
 
 </html>
