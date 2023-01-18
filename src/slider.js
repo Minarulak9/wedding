@@ -86,3 +86,10 @@ window.addEventListener('resize', () => {
     slider.style.transition = 'none';
     slider.style.transform = `translateX(${-(moveX * counter)}px)`;
 });
+
+
+// move top
+const topBtn = document.querySelector('.move_top button');
+topBtn.addEventListener('click', () => {
+    window.scrollTo(0,0);
+})
