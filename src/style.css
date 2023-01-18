@@ -553,6 +553,7 @@ ul {
     z-index: 100;
     width: 100%;
     transition: 0.5s;
+    z-index:101;
   }
 
   .header-img .text img {
@@ -560,6 +561,12 @@ ul {
   }
   #coming-soon{
     padding-top: 180px !important;
+  }
+  #recorded{
+    padding: 180px 15px !important;
+  }
+  .footer-section::before{
+    background:none;
   }
 }
 .move_top{
